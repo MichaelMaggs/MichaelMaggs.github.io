@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Northstar Docs is a public-facing product documentation website and knowledge base for modern software teams."
+    />
+    <title>Northstar Docs | Product Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Northstar home">
+          <span class="brand-mark">N</span>
+          <span>Northstar Docs</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#product">Product</a>
+          <a href="#docs">Docs</a>
+          <a href="#guides">Guides</a>
+          <a href="#api">API</a>
+          <a href="#resources">Resources</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="link-button" href="#resources">Log in</a>
+          <a class="primary-button" href="#get-started">Get started</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Public product documentation</p>
+            <h1>Documentation that helps customers ship faster.</h1>
+            <p class="lede">
+              Centralize product knowledge, onboarding guides, release notes, and API
+              reference in one polished knowledge base your customers can trust.
+            </p>
+
+            <div class="search-wrap" aria-label="Search documentation">
+              <span class="search-icon">⌕</span>
+              <input
+                id="doc-search"
+                type="search"
+                placeholder="Search docs, guides, and API references"
+                aria-label="Search documentation"
+              />
+            </div>
+
+            <div class="cta-group">
+              <a class="primary-button" href="#docs">Browse docs</a>
+              <a class="secondary-button" href="#contact">Talk to sales</a>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Key metrics">
+              <li><strong>84k+</strong><span>articles indexed</span></li>
+              <li><strong>99.9%</strong><span>uptime</span></li>
+              <li><strong>4.9/5</strong><span>team satisfaction</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" aria-label="Documentation overview panel">
+            <div class="panel-header">
+              <div class="status-pill">
+                <span class="status-dot"></span>
+                Live docs
+              </div>
+              <span class="small-label">Updated 2 hours ago</span>
+            </div>
+
+            <div class="mini-card highlight">
+              <span class="mini-label">Latest release</span>
+              <strong>Northstar 4.8</strong>
+              <p>New analytics dashboards and workflow automations.</p>
+            </div>
+
+            <div class="mini-stack">
+              <div class="mini-card">
+                <span class="mini-label">Getting started</span>
+                <strong>Onboarding checklist</strong>
+              </div>
+              <div class="mini-card">
+                <span class="mini-label">API</span>
+                <strong>Authentication guide</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="popular-topics section" id="docs">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Popular topics</p>
+            <h2>Everything customer teams need to know</h2>
+          </div>
+
+          <div class="topic-grid" id="topic-grid">
+            <article class="topic-card" data-topic="getting started onboarding setup configuration">
+              <span class="topic-icon">01</span>
+              <h3>Getting started</h3>
+              <p>Set up your workspace, invite teammates, and launch your first workflow.</p>
+            </article>
+            <article class="topic-card" data-topic="configuration settings automation dashboards deployment">
+              <span class="topic-icon">02</span>
+              <h3>Configuration</h3>
+              <p>Customize permissions, integrations, and product settings with zero downtime.</p>
+            </article>
+            <article class="topic-card" data-topic="api auth integration webhooks sdk clients">
+              <span class="topic-icon">03</span>
+              <h3>API & integrations</h3>
+              <p>Connect with your stack using secure APIs, event webhooks, and SDKs.</p>
+            </article>
+            <article class="topic-card" data-topic="security compliance access control audit privacy">
+              <span class="topic-icon">04</span>
+              <h3>Security</h3>
+              <p>Learn how we protect data, configure permissions, and maintain compliance.</p>
+            </article>
+            <article class="topic-card" data-topic="troubleshooting support bug fix incident recovery">
+              <span class="topic-icon">05</span>
+              <h3>Troubleshooting</h3>
+              <p>Resolve common issues quickly with guided diagnostics and support playbooks.</p>
+            </article>
+            <article class="topic-card" data-topic="release notes roadmap updates changelog product decisions">
+              <span class="topic-icon">06</span>
+              <h3>Release notes</h3>
+              <p>Stay current with shipping updates, migrations, and roadmap highlights.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section alt" id="product">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Built for modern teams</p>
+            <h2>One source of truth for product knowledge</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-item">
+              <span class="feature-tag">Search</span>
+              <h3>Instant discovery</h3>
+              <p>Help users find answers with powerful search, filters, and suggested content.</p>
+            </article>
+            <article class="feature-item">
+              <span class="feature-tag">Scale</span>
+              <h3>Structured content</h3>
+              <p>Organize docs into playbooks, architecture references, and decision records.</p>
+            </article>
+            <article class="feature-item">
+              <span class="feature-tag">Delivery</span>
+              <h3>Fast publishing</h3>
+              <p>Ship updates quickly with versioning, changelogs, and review workflows.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="knowledge-base section" id="guides">
+        <div class="container knowledge-grid">
+          <div class="knowledge-copy">
+            <p class="eyebrow">Knowledge base</p>
+            <h2>Turn product context into self-serve support.</h2>
+            <p>
+              Maintain a living knowledge base that blends product documentation, team notes,
+              troubleshooting guides, and customer enablement content in a single experience.
+            </p>
+            <ul>
+              <li>AI-friendly article structure and metadata</li>
+              <li>Shared onboarding and operational playbooks</li>
+              <li>Private and public content visibility controls</li>
+            </ul>
+          </div>
+
+          <div class="article-list" id="resources">
+            <article class="article-item">
+              <span class="article-type">Guide</span>
+              <h3>How to onboard a new workspace</h3>
+              <p>Follow a step-by-step checklist for setup, permissions, and launch.</p>
+            </article>
+            <article class="article-item">
+              <span class="article-type">Reference</span>
+              <h3>Authentication and API token management</h3>
+              <p>Review the secure practices for building against the Northstar API.</p>
+            </article>
+            <article class="article-item">
+              <span class="article-type">Troubleshooting</span>
+              <h3>When workflows sync slowly or fail</h3>
+              <p>Use our diagnostics checklist to identify common bottlenecks.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq section alt" id="contact">
+        <div class="container narrow">
+          <div class="section-heading centered">
+            <p class="eyebrow">FAQ</p>
+            <h2>Questions teams ask before rolling out docs</h2>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>Can we publish public product documentation?</summary>
+              <p>Yes. Northstar supports public-facing documentation sites and internal knowledge bases within the same platform.</p>
+            </details>
+            <details>
+              <summary>Does the knowledge base support versioning?</summary>
+              <p>Absolutely. You can organize documentation by product versions, release trains, and environment-specific guidance.</p>
+            </details>
+            <details>
+              <summary>Can teams collaborate on articles?</summary>
+              <p>Yes. Writers, engineers, and support teams can work together with reviews, approval flows, and changelogs.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-mark">N</span>
+            <span>Northstar Docs</span>
+          </a>
+          <p>Public product documentation and knowledge base for growing teams.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#docs">Documentation</a></li>
+            <li><a href="#resources">Knowledge base</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container copyright">
+        <span>© <span id="year"></span> Northstar</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
