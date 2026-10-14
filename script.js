@@ -1,16 +1,16 @@
 const searchInput = document.getElementById('doc-search');
-const topicCards = [...document.querySelectorAll('.topic-card')];
+const productCards = [...document.querySelectorAll('.product-card')];
 const yearNode = document.getElementById('year');
 
 if (yearNode) {
   yearNode.textContent = new Date().getFullYear();
 }
 
-if (searchInput) {
+if (searchInput && productCards.length) {
   searchInput.addEventListener('input', (event) => {
     const query = event.target.value.trim().toLowerCase();
 
-    topicCards.forEach((card) => {
+    productCards.forEach((card) => {
       const match = card.dataset.topic.toLowerCase().includes(query);
       card.classList.toggle('hidden', query && !match);
     });
